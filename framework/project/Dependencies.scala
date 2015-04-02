@@ -253,7 +253,8 @@ object Dependencies {
   def jsonDependencies(scalaVersion: String) = Seq(
     jodatime,
     jodaConvert,
-    "org.scala-lang" % "scala-reflect" % scalaVersion) ++
+    "org.scala-lang" % "scala-compiler" % "2.11.5",
+    "org.scala-lang" % "scala-reflect" % "2.11.5") ++
   jacksons ++
   specsBuild.map(_ % Test)
 
